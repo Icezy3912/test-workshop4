@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>ร้านอาหารใกล้เคียง</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #e74c3c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin: 0 0 10px;
+    }
+    .card-content p {
+      margin: 5px 0;
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-    <h2>Hello! Im kittikawin pruksawan</h2>
-</body>
-</html>
+
+<header>
+  <h1>ร้านอาหารใกล้เคียง</h1>
+  <p>แนะนำร้านอาหารอร่อยใกล้คุณ</p>
+</header>
+
+<div class="container">
+  <div class="restaurant-grid">
+
+    <!-- ร้านที่ 1 -->
+    <div class="card">
+      <img src="https://recipe.sgethai.com/wp-content/uploads/2025/04/07042025-som-tum-thai-8.webp" alt="ร้านอาหาร 1">
+      <div class="card-content">
+        <h3>ร้านอาหารไทยบ้านสวน</h3>
+        <p>📍 ระยะทาง: 0.5 กม.</p>
+        <p>⭐ คะแนน: 4.5</p>
+      </div>
+    </div>
+
+    <!-- ร้านที่ 2 -->
+    <div class="card">
+      <img src="https://recipe.sgethai.com/wp-content/uploads/2025/04/cover-thai-boat-nooddles.webp" alt="ร้านอาหาร 2">
+      <div class="card-content">
+        <h3>ร้านก๋วยเตี๋ยวเรือ</h3>
+        <p>📍 ระยะทาง: 1 กม.</p>
+        <p>⭐ คะแนน: 4.2</p>
+      </div>
